@@ -270,12 +270,12 @@ if __name__ == '__main__':
         # print('Done Creating Hadj')
 
         print('+++++++++++++++++JNMF-L++++++++++++++')
-        gnmf = JNMF(feats, rank=k)
-        # gnmf.compute_factors(max_iter= args.max_iter, alpha= args.alpha, beta=args.beta, weight_type='laplacian', param=args.param, A=adj_norm, labels=labels)
-        gnmf.compute_factors(max_iter= args.max_iter, alpha= args.alpha, beta=args.beta, weight_type='laplacian', A=adj_norm, labels=labels)
+        jnmf = JNMF(feats, rank=k)
+        # jnmf.compute_factors(max_iter= args.max_iter, alpha= args.alpha, beta=args.beta, weight_type='laplacian', param=args.param, A=adj_norm, labels=labels)
+        jnmf.compute_factors(max_iter= args.max_iter, alpha= args.alpha, beta=args.beta, weight_type='laplacian', A=adj_norm, labels=labels)
 
-        h = gnmf.H
-        #e = gnmf.frob_error # not implemented yet
+        h = jnmf.H
+        #e = jnmf.frob_error # not implemented yet
         H = h.T
         predict_labels = np.asarray(np.argmax(H, axis=1)).squeeze()
 
