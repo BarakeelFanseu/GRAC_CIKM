@@ -38,4 +38,11 @@
 
 
 # Please Cite Our Work:
+@inproceedings{barak2021hypergraph,
+  title={HyperGraph Convolution Based Attributed HyperGraph Clustering},
+  author={Barakeel Fanseu Kamhoua and Lin Zhang and Kaili Ma and James Cheng and Bo Li and Bo Han},
+  booktitle={Proceedings of the 30th ACM International Conference on Information \& Knowledge Management},
+  pages={},
+  year={2021}
+}
 
